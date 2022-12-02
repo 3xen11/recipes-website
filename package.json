@@ -1,0 +1,17 @@
+{
+  "name": "afoodcado",
+  "version": "1.0.0",
+  "description": "Website with food recipes",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "food",
+    "meal",
+    "eat",
+    "healthy"
+  ],
+  "author": "Dawid Dardziński",
+  "license": "ISC"
+}
