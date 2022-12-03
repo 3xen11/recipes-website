@@ -1,0 +1,21 @@
+.header {
+    position: relative;
+
+    &__logo-box {
+
+        .sentence {
+            width: 70%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .banner {
+            width: 100%;
+            filter: brightness(80%) blur(2px);
+            position: relative;
+        }
+    }
+}

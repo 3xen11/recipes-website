@@ -1,0 +1,28 @@
+.about-us {
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-background;
+
+    .about-panel {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .amount {
+            color: $color-primary;
+        }
+
+        img {
+            align-self: center;
+            width: 10rem;
+            -webkit-filter: invert(1);
+            filter: invert(1);
+            margin-top: 3rem;
+        }
+
+        span {
+            font-size: 1.4rem;
+            margin-top: 5px;
+        }
+    }
+}

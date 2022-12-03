@@ -1,0 +1,54 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: $color-background;
+    height: 7rem;
+
+    .logo-block {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+
+        .logo {
+            width: 30%;
+        }
+
+        &-text {
+            text-align: center;
+            display: block;
+        }
+
+        .logo-text--green {
+            color: $color-primary;
+        }
+    }
+
+
+    nav {
+
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+                margin-left: 2rem;
+                font-weight: 700;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $color-primary;
+                }
+            }
+
+            li:last-child {
+                margin-right: 2rem;
+                color: $color-primary;
+            }
+
+
+
+        }
+    }
+}

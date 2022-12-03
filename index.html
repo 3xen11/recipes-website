@@ -6,13 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aFOODcado | ugotuj życie na nowo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+    </style>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <div class="navigation">
-        <img src="" alt="" class="logo">
+        <div class="logo-block">
+            <img src="img/logo-small.png" alt="logo" class="logo">
+            <span class="logo-text">a<span class="logo-text--green">FOOD</span>cado</span>
+        </div>
+
+
         <nav>
             <ul>
                 <li>O nas</li>
@@ -27,23 +38,46 @@
 
     <header class="header">
         <div class="header__logo-box">
-            photo
-            <h1>SENTENCJA</h1>
+            <img src="img/banner.jpg" alt="baner" class="banner">
+            <h1 class="sentence">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam at eos nemo
+                recusandae? Optio non laborum totam, dicta aspernatur sapiente ratione pariatur fugiat rerum aliquid
+                debitis magni ipsum velit!</h1>
         </div>
-        <button>Przepisy</button>
+        <button class="btn--outline">Przepisy</button>
     </header>
 
     <aside class="sponsors">
+        <div>Nasi sponsorzy:</div>
         <div class="sponsors--slider">
-            <img src="img/sponsors/sponsor-1" alt="knorr">
-            <img src="img/sponsors/sponsor-2" alt="winiary">
-            <img src="img/sponsors/sponsor-3" alt="kucharek">
-            <img src="img/sponsors/sponsor-4" alt="prymat">
-            <img src="img/sponsors/sponsor-5" alt="kamis">
+            <img src="img/sponsors/sponsor-1.png" alt="logo sponsor">
+            <img src="img/sponsors/sponsor-2.png" alt="logo sponsor">
+            <img src="img/sponsors/sponsor-3.png" alt="logo sponsor">
+            <img src="img/sponsors/sponsor-4.png" alt="logo sponsor">
+            <img src="img/sponsors/sponsor-5.png" alt="logo sponsor">
         </div>
     </aside>
 
     <main>
+        <section class="about-us">
+            <div class="users about-panel">
+                <img src="img/icons/users.png" alt="icon users">
+                <span class="amount"> +5000</span>
+                <span> Ilość użytkowników:</span>
+                <span class="loading-bar"> animowany pasek</span>
+            </div>
+            <div class="recipes about-panel">
+                <img src="img/icons/meals.png" alt="icon recipes">
+                <span class="amount"> +18 000</span>
+                <span> Ilość przepisów:</span>
+                <span class="loading-bar"> animowany pasek</span>
+            </div>
+            <div class=" about-panel">
+                ikona
+                <span class="amount"> animowany tekst</span>
+                <span> opis:</span>
+                <span class="loading-bar"> animowany pasek</span>
+            </div>
+        </section>
         <section class="meal-planner">PLANER POSIŁKÓW</section>
         <section class="contest">KONKURS</section>
         <section class="mobile-app">APLIKACJA MOBILNA</section>
@@ -51,7 +85,7 @@
     </main>
 
     <footer>
-
+        FOOTER
     </footer>
 
 </body>

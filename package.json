@@ -4,7 +4,10 @@
   "description": "Website with food recipes",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css"
   },
   "keywords": [
     "food",
@@ -13,5 +16,9 @@
     "healthy"
   ],
   "author": "Dawid Dardziński",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "node-sass": "^8.0.0"
+  }
 }

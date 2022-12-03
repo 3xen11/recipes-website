@@ -1,0 +1,27 @@
+.btn--outline {
+    height: 5rem;
+    width: 20rem;
+    background-color: transparent;
+    color: $color-white;
+    border: 3px solid $color-white;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    border-radius: 5rem;
+    transition: all 0.3s;
+}
+
+.btn--outline:hover {
+    border: 3px solid $color-primary;
+    color: $color-black;
+    background-color: $color-primary;
+    box-shadow: $shadow-dark;
+    // transform: translate(-50%, 5px);
+}
+
+.btn--outline:active {
+    transform: translate(-50%, 7px);
+}
