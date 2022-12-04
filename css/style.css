@@ -32,7 +32,8 @@ body {
   transform: translateX(-50%);
   cursor: pointer;
   border-radius: 5rem;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  z-index: 10; }
 
 .btn--outline:hover {
   border: 3px solid #AED137;
@@ -45,6 +46,17 @@ body {
 
 .loading-bar {
   color: #AED137; }
+
+.darkening {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  filter: brightness(80%) blur(20px);
+  opacity: 0.5;
+  z-index: 1;
+  background-color: #000; }
 
 .navigation {
   display: flex;
@@ -84,25 +96,26 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; }
+    text-align: center;
+    z-index: 2; }
   .header__logo-box .banner {
+    position: relative;
     width: 100%;
-    filter: brightness(80%) blur(2px);
     position: relative; }
 
 .sponsors {
-  height: 15rem;
+  height: 17rem;
   background-color: #202338;
   width: 100%;
   margin-top: -1rem;
   overflow: hidden;
   z-index: 2; }
-  .sponsors div {
+  .sponsors h3 {
     width: 100%;
     text-align: center;
     font-size: 1.7rem;
     font-weight: 700;
-    padding: 2rem 0 0 0; }
+    padding: 2rem 0; }
   .sponsors--slider {
     display: flex;
     justify-content: space-around;
@@ -111,12 +124,77 @@ body {
       height: 7rem; }
 
 .meal-planner {
-  background-color: royalblue; }
+  display: flex;
+  background-color: #202338;
+  flex-direction: column; }
+  .meal-planner h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding: 2rem 0; }
+  .meal-planner h4 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2rem; }
+  .meal-planner .meal-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5rem 0;
+    flex-wrap: wrap; }
+  .meal-planner .step-3,
+  .meal-planner .step-4 {
+    margin-top: 5rem; }
+  .meal-planner .step-container {
+    width: 45rem;
+    position: relative; }
+  .meal-planner .darkenin {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0;
+    border-radius: 3rem;
+    z-index: 5;
+    transition: all 0.3s; }
+  .meal-planner .darkenin:hover ~ img {
+    transform: scale(1.05);
+    box-shadow: 3px 6px 15px -3px #000; }
+  .meal-planner .darkenin:hover {
+    opacity: 0.7;
+    transform: scale(1.05); }
+  .meal-planner .action {
+    position: absolute;
+    bottom: 50%;
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%); }
+    .meal-planner .action span {
+      font-size: 1.5rem; }
+  .meal-planner img {
+    width: 100%;
+    border-radius: 3rem;
+    border: 3px solid black;
+    transition: all 0.3s;
+    box-shadow: 8px 8px 25px 1px #000;
+    transition: all 0.3s; }
 
 .about-us {
-  display: flex;
-  justify-content: space-around;
   background-color: #090a14; }
+  .about-us .about-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 0; }
+  .about-us h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding: 2rem 0; }
   .about-us .about-panel {
     display: flex;
     flex-direction: column;

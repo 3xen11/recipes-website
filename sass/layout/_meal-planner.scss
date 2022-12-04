@@ -1,3 +1,88 @@
 .meal-planner {
-    background-color: royalblue;
+    display: flex;
+    background-color: $color-background-light;
+    flex-direction: column;
+
+    h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.7rem;
+        font-weight: 700;
+        padding: 2rem 0;
+    }
+
+    h4 {
+        text-align: center;
+        margin: 2rem 0;
+        font-size: 2rem;
+
+    }
+
+    .meal-container {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 5rem 0;
+        flex-wrap: wrap;
+    }
+
+    .step-3,
+    .step-4 {
+        margin-top: 5rem;
+    }
+
+    .step-container {
+        width: 45rem;
+        position: relative;
+        // overflow: hidden;
+    }
+
+
+
+    .darkenin {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: $color-black;
+        opacity: 0;
+        border-radius: 3rem;
+        z-index: 5;
+        transition: all 0.3s;
+    }
+
+    .darkenin:hover~img {
+        transform: scale(1.05);
+        box-shadow: $shadow-dark-medium;
+    }
+
+    .darkenin:hover {
+        opacity: 0.7;
+        transform: scale(1.05);
+    }
+
+
+    .action {
+        position: absolute;
+        bottom: 50%;
+        z-index: 3;
+        width: 100%;
+        text-align: center;
+        transform: translateY(-50%);
+
+        span {
+            font-size: 1.5rem;
+        }
+    }
+
+    img {
+        width: 100%;
+        border-radius: 3rem;
+        border: 3px solid black;
+        transition: all 0.3s;
+        box-shadow: $shadow-dark;
+        transition: all 0.3s;
+    }
+
 }
