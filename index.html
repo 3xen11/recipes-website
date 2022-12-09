@@ -20,12 +20,12 @@
     <div class="navigation">
         <div class="logo-block">
             <img src="img/logo-small.png" alt="logo" class="logo">
-            <span class="logo-text">a<span class="logo-text--green">FOOD</span>cado</span>
+            <span class="logo-text font-h2">a<span class="logo-text--green">FOOD</span>cado</span>
         </div>
 
 
         <nav>
-            <ul>
+            <ul class="font-navigation">
                 <li>O nas</li>
                 <li>Planer posiłków</li>
                 <li>Konkurs</li>
@@ -40,9 +40,11 @@
         <div class="header__logo-box">
             <div class="darkening"></div>
             <img src="img/banner.jpg" alt="baner" class="banner">
-            <h1 class="sentence">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam at eos nemo
-                recusandae? Optio non laborum totam, dicta aspernatur sapiente ratione pariatur fugiat rerum aliquid
-                debitis magni ipsum velit!</h1>
+            <h1 class="sentence font-h1">"Wyrusz z nami w kulinarną podróż po najsmaczniejszych przepisach! Znajdziesz u
+                nas pomysły na pyszne i zdrowe dania, które zachwycą twoich gości i rodzinę. Odkryj tajniki sztuki
+                kucharskiej i poznaj nowe, niezwykłe smaki. Dołącz do naszej społeczności i dziel się swoimi przepisami,
+                a my pomożemy ci je rozpowszechnić. aFOODcado - Twoje miejsce w sieci, gdzie kulinaria spotyka pasję!"
+            </h1>
         </div>
         <button class="btn--outline">Przepisy</button>
     </header>
@@ -52,11 +54,11 @@
 
         <div class="sponsors--slider">
 
-            <img src="img/sponsors/sponsor-1.png" alt="logo sponsor">
-            <img src="img/sponsors/sponsor-2.png" alt="logo sponsor">
-            <img src="img/sponsors/sponsor-3.png" alt="logo sponsor">
-            <img src="img/sponsors/sponsor-4.png" alt="logo sponsor">
-            <img src="img/sponsors/sponsor-5.png" alt="logo sponsor">
+            <img class="sponsor-img" src="img/sponsors/sponsor-1.png" alt="logo sponsor">
+            <img class="sponsor-img" src="img/sponsors/sponsor-2.png" alt="logo sponsor">
+            <img class="sponsor-img" src="img/sponsors/sponsor-3.png" alt="logo sponsor">
+            <img class="sponsor-img" src="img/sponsors/sponsor-4.png" alt="logo sponsor">
+            <img class="sponsor-img" src="img/sponsors/sponsor-5.png" alt="logo sponsor">
         </div>
     </aside>
 
@@ -96,7 +98,7 @@
                                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
                             </div>
                         </div>
-                        <img src="img/meal-planner/step-1.jpg" alt="Meal planner step">
+                        <img class="img-card" src="img/meal-planner/step-1.jpg" alt="Meal planner step">
                     </div>
                 </div>
 
@@ -108,7 +110,7 @@
                                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
                             </div>
                         </div>
-                        <img src="img/meal-planner/step-1.jpg" alt="Meal planner step">
+                        <img class="img-card" src="img/meal-planner/step-1.jpg" alt="Meal planner step">
                     </div>
                 </div>
 
@@ -120,7 +122,7 @@
                                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
                             </div>
                         </div>
-                        <img src="img/meal-planner/step-1.jpg" alt="Meal planner step">
+                        <img class="img-card" src="img/meal-planner/step-1.jpg" alt="Meal planner step">
                     </div>
                 </div>
 
@@ -132,19 +134,74 @@
                                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
                             </div>
                         </div>
-                        <img src="img/meal-planner/step-1.jpg" alt="Meal planner step">
+                        <img class="img-card" src="img/meal-planner/step-1.jpg" alt="Meal planner step">
                     </div>
                 </div>
             </div>
 
         </section>
-        <section class="contest">KONKURS</section>
-        <section class="mobile-app">APLIKACJA MOBILNA</section>
-        <section class="newsletter">NEWSLETTER</section>
+        <section class="contest">
+            <section id="konkurs">
+                <h1>Konkurs na najlepszy przepis kulinarny</h1>
+                <p>Szukamy najlepszego przepisu kulinarnego, który zachwyci nas swoim smakiem i oryginalnością. Zgłaszaj
+                    swoje propozycje i wygraj nagrody rzeczowe oraz voucher na zakupy w naszym sklepie kulinarnym.</p>
+
+                <h2>Zasady konkursu:</h2>
+                <ul>
+                    <li>Przepis może dotyczyć dowolnego dania - od przystawki po deser.</li>
+                    <li>Przepis musi być oryginalny i niepublikowany wcześniej.</li>
+                    <li>Zgłoszenie powinno zawierać przepis wraz z listą składników oraz zdjęciem gotowego dania.</li>
+                    <li>Zgłoszenia można przesyłać do 31 grudnia 2022 roku.</li>
+                    <li>Laureatów ogłosimy na naszej stronie internetowej w styczniu 2023 roku.</li>
+                </ul>
+
+                <img src="nagrody.jpg" alt="Zdjęcie nagród rzeczowych i vouchera na zakupy">
+            </section>
+        </section>
+
+        <section class="mobile-app">
+            <h2>Poznaj naszą nową plikację mobilną:</h2>
+            <div class="container-mobile">
+
+                <img class="img-card card-1" src="img/meal-planner/step-1.jpg" alt="Meal planner step">
+                <img class="img-card card-2" src="img/meal-planner/step-1.jpg" alt="Meal planner step">
+                <img class="img-card card-3" src="img/meal-planner/step-1.jpg" alt="Meal planner step">
+
+            </div>
+            <span>Od teraz możesz zabrać swoje ulubione przepisy wszędzie!</span>
+        </section>
+        <!-- <section class="newsletter">NEWSLETTER</section> -->
     </main>
 
+
+    <section class="newsletter">
+        <div class="newsletter__left">
+
+            <div class="bg"></div>
+            <div class="bg-1"></div>
+            <h2 class="newsletter__heading">Zapisz się do naszego newslettera</h2>
+            <label for="email" class="newsletter__label">E-mail:</label>
+            <input type="email" id="email" class="newsletter__input" placeholder="Wpisz swój adres e-mail">
+            <button class="btn--outline">Zapisz się</button>
+        </div>
+
+
+        <div class="newsletter__right">
+            <h3>Jeśli uwielbiasz gotować i poszukujesz inspiracji do nowych przepisów, to nasz newsletter jest
+                właśnie dla Ciebie! Codziennie dostarczamy Ci nowe, oryginalne pomysły na smaczne dania, które
+                zachwycą Twoich bliskich i znajomych. Dołącz do nas i zapisz się do naszego newslettera już
+                dziś!
+                Nie przegap żadnej okazji, aby urozmaicić swoje menu i cieszyć się pysznymi potrawami!</h3>
+
+
+            <div class="newsletter__right__text">
+                <img src="img/meal-planner/step-1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
     <footer>
-        FOOTER
+
     </footer>
 
 </body>

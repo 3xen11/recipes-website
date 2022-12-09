@@ -5,6 +5,7 @@
     margin-top: -1rem;
     overflow: hidden;
     z-index: 2;
+    position: relative;
 
     h3 {
         width: 100%;
@@ -18,9 +19,38 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        position: absolute;
+        -webkit-animation: linear infinite;
+        -webkit-animation-name: run;
+        -webkit-animation-duration: 30s;
 
         img {
             height: 7rem;
+            margin-right: 20rem;
         }
+
+
+
+        @-webkit-keyframes run {
+            0% {
+                left: -120%;
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

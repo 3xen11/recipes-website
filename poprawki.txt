@@ -1,0 +1,7 @@
+					index.html
+					klasa .darkenin
+
+					_meal-planner.scss
+					selektor .darkenin
+
+-------- uporządkować, zmienić to na bardziej "profesjonalne" ---------

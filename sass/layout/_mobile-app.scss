@@ -1,0 +1,44 @@
+.mobile-app {
+    width: 100%;
+    background-color: $color-background;
+
+    .container-mobile {
+        display: flex;
+        justify-content: center;
+
+        .img-card {
+            width: 100%;
+        }
+
+        .img-card {
+            z-index: 2;
+
+            &:hover {
+                transform: scale(1.05);
+                z-index: 3;
+            }
+        }
+
+        .card-1 {
+            transform: rotate(-10deg) translate(13rem, 50px) scale(0.95);
+        }
+
+        .card-1:hover {
+            transform: rotate(-10deg) translate(13rem, 50px) scale(1);
+            z-index: 5;
+        }
+
+        .card-2 {
+            z-index: 4;
+        }
+
+        .card-3 {
+            transform: rotate(10deg) translate(-13rem, 50px) scale(0.95);
+        }
+
+        .card-3:hover {
+            transform: rotate(10deg) translate(-13rem, 50px) scale(1);
+            z-index: 5;
+        }
+    }
+}
