@@ -62,8 +62,11 @@
     }
 
     .btn--outline {
-        @include absolute-positioning(88%, 50%, -50%);
+        @include absolute-positioning(85%, 50%, -50%);
         color: $color-secondary;
+        height: 5rem;
+        width: 20rem;
+        font-size: 2rem;
         @include border-standard($color-secondary);
 
         &:hover {

@@ -1,0 +1,42 @@
+footer {
+    width: 100%;
+    background-color: $color-tertiary;
+    height: 11rem;
+    // padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    ul {
+        display: flex;
+        width: 40%;
+        margin-top: 1rem;
+        justify-content: space-between;
+
+        li {
+            display: flex;
+            list-style: none;
+            width: 10rem;
+            height: 3rem;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            cursor: pointer;
+            font-weight: 700;
+
+            &:hover {
+                transform: scale(1.01, 1) rotate(12deg)skew(0, 0) translate(0, 0);
+                transform-origin: 50% 50%;
+                background-color: $color-quaternary;
+            }
+        }
+    }
+
+    p {
+
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}

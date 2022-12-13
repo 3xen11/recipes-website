@@ -29,6 +29,7 @@
 
     &:active {
         transform: translate(-50%, 4px);
+        box-shadow: $shadow-dark-medium;
     }
 
     a:link,

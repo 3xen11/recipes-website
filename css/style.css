@@ -68,7 +68,8 @@ main {
     box-shadow: 8px 8px 25px 1px #000;
     color: black; }
   .btn--outline:active {
-    transform: translate(-50%, 4px); }
+    transform: translate(-50%, 4px);
+    box-shadow: 3px 6px 15px -3px #000; }
   .btn--outline a:link,
   .btn--outline a:visited {
     color: inherit;
@@ -325,10 +326,13 @@ main {
     padding-top: 5rem; }
   .mobile-app .btn--outline {
     position: absolute;
-    top: 88%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, 0);
     color: #954b2a;
+    height: 5rem;
+    width: 20rem;
+    font-size: 2rem;
     border: 3px solid #954b2a; }
     .mobile-app .btn--outline:hover {
       border: 3px solid #AED137;
@@ -379,7 +383,8 @@ main {
         width: 35rem;
         height: 3rem;
         margin: 1rem 0 3rem 0;
-        padding-left: 1rem; }
+        padding-left: 1rem;
+        border: 2px solid #954b2a; }
       .newsletter .form-container .newsletter-form .btn--outline {
         height: 5rem;
         width: 20rem;
@@ -394,3 +399,35 @@ main {
   .newsletter--container .newsletter-photo {
     width: 100%;
     border-radius: 5rem; }
+
+footer {
+  width: 100%;
+  background-color: #5a7f39;
+  height: 11rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  footer ul {
+    display: flex;
+    width: 40%;
+    margin-top: 1rem;
+    justify-content: space-between; }
+    footer ul li {
+      display: flex;
+      list-style: none;
+      width: 10rem;
+      height: 3rem;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      cursor: pointer;
+      font-weight: 700; }
+      footer ul li:hover {
+        transform: scale(1.01, 1) rotate(12deg) skew(0, 0) translate(0, 0);
+        transform-origin: 50% 50%;
+        background-color: #3d5627; }
+  footer p {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto; }
