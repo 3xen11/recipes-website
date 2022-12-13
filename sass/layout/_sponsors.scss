@@ -1,18 +1,14 @@
 .sponsors {
-    height: 17rem;
-    background-color: $color-background-light;
-    width: 100%;
-    margin-top: -1rem;
+    height: 20rem;
+    background-color: $color-gray-light;
+    width: 80%;
+    margin: 0 auto;
     overflow: hidden;
     z-index: 2;
     position: relative;
 
-    h3 {
-        width: 100%;
-        text-align: center;
-        font-size: 1.7rem;
-        font-weight: 700;
-        padding: 2rem 0;
+    h2 {
+        color: $color-secondary;
     }
 
     &--slider {
@@ -24,11 +20,11 @@
         -webkit-animation-name: run;
         -webkit-animation-duration: 30s;
 
+
         img {
             height: 7rem;
             margin-right: 20rem;
         }
-
 
 
         @-webkit-keyframes run {
@@ -40,17 +36,5 @@
                 left: 100%;
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

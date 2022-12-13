@@ -1,0 +1,39 @@
+//Position centering
+
+@mixin centering-horizontaly-vertically {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+@mixin absolute-positioning ($top:0, $left:0, $x:0, $y:0) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate($x, $y)
+}
+
+@mixin centering-horizontaly {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+@mixin centering-vertically {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+//Flexbox
+@mixin flexbox-center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//Border
+@mixin border-standard ($color) {
+    border: 3px solid $color;
+}

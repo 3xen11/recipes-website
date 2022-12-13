@@ -1,15 +1,29 @@
 // Background colors
-$color-background:#090a14;
-$color-background-light:#202338;
-$color-background-lighter:#111324;
+$color-background:#f6dbae;
 
 //Primary colors
 $color-primary:#AED137;
-$color-secondary:#663300;
+$color-secondary:#954b2a;
+$color-tertiary:#5a7f39;
 
+//Black-White and Shades 
 $color-black: #000;
-$color-white: rgb(232, 232, 232);
+$color-white: #fff;
+$color-gray-light: #f7f9ec;
+
 
 //Shadow
 $shadow-dark:8px 8px 25px 1px $color-black;
 $shadow-dark-medium:3px 6px 15px -3px $color-black;
+
+//Border radius 
+$border-radius-standard: 5rem;
+$border-radius-medium: 3rem;
+$border-radius-small: 1rem;
+
+
+//Animations time
+$standard-animations-time: all 0.3s;
+$short-animation-time: all 0.2s;
+
+//Flexbox

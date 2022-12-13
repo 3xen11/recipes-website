@@ -1,0 +1,78 @@
+.newsletter {
+    width: 100rem;
+    margin: 3rem auto;
+    color: $color-secondary;
+    position: relative;
+
+
+    h3,
+    p {
+        position: absolute;
+        text-align: center;
+        @include absolute-positioning (5%, 50%, -50%);
+        font-size: 8rem;
+    }
+
+    p {
+        @include absolute-positioning (30%, 50%, -50%);
+        font-size: 1.5rem;
+        font-weight: 800;
+        width: 60%;
+    }
+
+
+    .form-container {
+        height: 10rem;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        @include absolute-positioning (60%, 50%, -50%);
+        width: 35rem;
+
+        .newsletter-form {
+            font-weight: 800;
+            font-size: 1.5rem;
+            width: 100%;
+
+            label {
+                font-size: 1.8rem;
+            }
+
+            input {
+                border-radius: $border-radius-small;
+                width: 35rem;
+                height: 3rem;
+                margin: 1rem 0 3rem 0;
+                padding-left: 1rem;
+            }
+
+
+            .btn--outline {
+                height: 5rem;
+                width: 20rem;
+                font-size: 2rem;
+                color: $color-secondary;
+                border: 3px solid $color-secondary;
+                margin-top: 12rem;
+
+
+                &:hover {
+                    color: $color-secondary;
+                    border: 3px solid $color-primary;
+                    color: $color-white;
+                }
+            }
+        }
+
+
+    }
+
+    &--container {
+
+
+        .newsletter-photo {
+            width: 100%;
+            border-radius: $border-radius-standard;
+        }
+    }
+}

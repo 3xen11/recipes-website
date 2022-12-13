@@ -2,45 +2,52 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $color-white;
-    height: 7rem;
+    background-color: $color-gray-light;
+    height: 10vh;
 
     .logo-block {
+        position: relative;
         display: flex;
         align-items: center;
+        justify-content: flex-start;
         font-weight: 700;
 
-        .font-h2 {
-            color: #663300;
-        }
-
         .logo {
-            width: 30%;
-        }
+            width: 50%;
 
-        &-text {
-            text-align: center;
-            display: block;
-        }
+            &-text {
+                @include centering-vertically;
+                transform: translate(8.7rem, -50%);
+                color: $color-secondary;
+                font-size: 2.3rem;
 
-        .logo-text--green {
-            color: $color-primary;
+                &--green {
+                    color: $color-primary;
+                }
+            }
         }
     }
 
     nav {
-        ul {
+        .navigation-list {
             display: flex;
 
             li {
                 list-style: none;
                 margin-left: 2rem;
                 font-weight: 700;
-                color: #663300;
+                color: $color-secondary;
+                transition: $short-animation-time;
+                cursor: pointer;
+                font-size: 1.6rem;
 
-                &:hover {
-                    cursor: pointer;
+                &:hover:not(:last-child) {
                     color: $color-primary;
+                    transform: translateY(-2px);
+                }
+
+                &:active:not(:last-child) {
+                    transform: translateY(0);
                 }
             }
 

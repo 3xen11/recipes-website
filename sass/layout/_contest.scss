@@ -1,11 +1,39 @@
-#konkurs {
+.contest {
     text-align: center;
-}
+    background-color: $color-tertiary;
 
-#konkurs h1 {
-    color: blue;
-}
+    h2 {}
 
-#konkurs h2 {
-    color: green;
+    p {
+        font-size: 1.6rem;
+        padding-bottom: 3rem;
+        width: 70%;
+        margin: 0 auto;
+
+    }
+
+    h3 {
+        margin: 2rem;
+        color: $color-primary;
+    }
+
+    img {
+        width: 60%;
+        border-radius: $border-radius-standard;
+    }
+
+    ul {
+
+        li {
+            list-style: none;
+            line-height: 2rem;
+            font-size: 1.3em;
+
+
+            &:last-child {
+                padding-bottom: 2rem;
+            }
+        }
+    }
+
 }

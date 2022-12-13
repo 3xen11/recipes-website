@@ -1,17 +1,31 @@
 .mobile-app {
     width: 100%;
-    background-color: $color-background;
+
+    height: 90rem;
+    position: relative;
+
+    h2 {
+        text-align: center;
+        color: $color-secondary;
+        margin: 8rem 0 5rem 0;
+    }
+
+    p {
+        text-align: center;
+        color: $color-secondary;
+        width: 80%;
+        margin: 2rem auto;
+        font-size: 1.5rem;
+    }
 
     .container-mobile {
         display: flex;
         justify-content: center;
 
         .img-card {
-            width: 100%;
-        }
-
-        .img-card {
+            width: 20%;
             z-index: 2;
+            margin-top: 2rem;
 
             &:hover {
                 transform: scale(1.05);
@@ -41,4 +55,25 @@
             z-index: 5;
         }
     }
+
+    h3 {
+        color: $color-secondary;
+        padding-top: 5rem;
+    }
+
+    .btn--outline {
+        @include absolute-positioning(88%, 50%, -50%);
+        color: $color-secondary;
+        @include border-standard($color-secondary);
+
+        &:hover {
+            @include border-standard($color-primary);
+            color: $color-white;
+        }
+
+        &:active {
+            transform: translate(-50%, 4px);
+        }
+    }
+
 }
