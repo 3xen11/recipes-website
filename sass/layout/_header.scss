@@ -3,7 +3,10 @@
     height: 90vh;
     overflow: hidden;
 
+
+
     &__logo-box {
+
 
         .sentence {
             width: 80%;
@@ -15,10 +18,25 @@
         .banner {
             position: relative;
             width: 100%;
+            height: 95vh;
+            object-fit: cover;
         }
     }
 
-    .btn--outline:hover {
-        mix-blend-mode: lighten;
+
+    .btn--outline {
+        @include absolute-positioning(70%, 50%, -50%);
+
+        &:hover {
+            mix-blend-mode: lighten;
+            @include absolute-positioning(69%, 50%, -50%);
+        }
+
+        &:active {
+            transform: translate(-50%, 4px);
+            box-shadow: $shadow-dark-medium;
+        }
     }
+
+
 }

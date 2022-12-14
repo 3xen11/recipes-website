@@ -24,13 +24,19 @@ footer {
             font-size: 1.4rem;
             cursor: pointer;
             font-weight: 700;
+            transition: $standard-animations-time;
 
             &:hover {
                 transform: scale(1.01, 1) rotate(12deg)skew(0, 0) translate(0, 0);
                 transform-origin: 50% 50%;
                 background-color: $color-quaternary;
             }
+
+            &:active {
+                transform: scale(1, 1) rotate(0deg)skew(0, 0) translate(0, 0);
+            }
         }
+
     }
 
     p {

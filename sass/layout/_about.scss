@@ -1,6 +1,10 @@
 .about-us {
     background-color: $color-tertiary;
 
+    h2 {
+        color: $color-primary;
+    }
+
 
     .about-container {
         display: flex;

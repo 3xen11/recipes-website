@@ -47,11 +47,6 @@ main {
   background-color: transparent;
   color: #fff;
   border: 3px solid #fff;
-  border: 3px solid #fff;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, 0);
   font-size: 3.7rem;
   bottom: 12%;
   cursor: pointer;
@@ -65,10 +60,9 @@ main {
     border: 3px solid #AED137;
     color: #fff;
     background-color: #AED137;
-    box-shadow: 8px 8px 25px 1px #000;
-    color: black; }
+    color: black;
+    box-shadow: 8px 8px 25px 1px #000; }
   .btn--outline:active {
-    transform: translate(-50%, 4px);
     box-shadow: 3px 6px 15px -3px #000; }
   .btn--outline a:link,
   .btn--outline a:visited {
@@ -153,9 +147,23 @@ main {
     z-index: 2; }
   .header__logo-box .banner {
     position: relative;
-    width: 100%; }
-  .header .btn--outline:hover {
-    mix-blend-mode: lighten; }
+    width: 100%;
+    height: 95vh;
+    object-fit: cover; }
+  .header .btn--outline {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0); }
+    .header .btn--outline:hover {
+      mix-blend-mode: lighten;
+      position: absolute;
+      top: 69%;
+      left: 50%;
+      transform: translate(-50%, 0); }
+    .header .btn--outline:active {
+      transform: translate(-50%, 4px);
+      box-shadow: 3px 6px 15px -3px #000; }
 
 .sponsors {
   height: 20rem;
@@ -214,31 +222,50 @@ main {
       border-radius: 3rem;
       z-index: 5;
       transition: all 0.3s; }
+      .meal-planner .step-card .darkenin .action {
+        position: absolute;
+        bottom: 0;
+        z-index: 3;
+        width: 100%;
+        text-align: center;
+        height: 20%;
+        background-color: #5a7f39;
+        padding-top: 2rem;
+        border-radius: 0 0 3rem 3rem;
+        font-size: 1.3rem;
+        z-index: 6; }
+    .meal-planner .step-card span {
+      position: absolute;
+      opacity: 0;
+      font-weight: 800;
+      letter-spacing: .2rem;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      z-index: 7;
+      transition: all 0.3s;
+      width: 100%;
+      text-align: center;
+      font-size: 1.8rem;
+      width: 90%; }
   .meal-planner .darkenin:hover ~ img {
     transform: scale(1.05);
     box-shadow: 3px 6px 15px -3px #000; }
   .meal-planner .darkenin:hover {
-    opacity: 0.7;
+    opacity: 0.9;
     transform: scale(1.05); }
-    .meal-planner .darkenin:hover .action span {
-      opacity: 1;
-      font-weight: 800;
-      letter-spacing: .2rem; }
-  .meal-planner .action {
+  .meal-planner .darkenin:hover + span {
+    opacity: 1;
     position: absolute;
-    bottom: 0;
-    z-index: 3;
-    width: 100%;
-    text-align: center;
-    height: 20%;
-    background-color: #5a7f39;
-    padding-top: 2rem;
-    border-radius: 0 0 3rem 3rem;
-    font-size: 1.3rem;
-    z-index: 6; }
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, 0); }
 
 .about-us {
   background-color: #5a7f39; }
+  .about-us h2 {
+    color: #AED137; }
   .about-us .about-container {
     display: flex;
     justify-content: space-around;
@@ -267,6 +294,8 @@ main {
 .contest {
   text-align: center;
   background-color: #5a7f39; }
+  .contest h2 {
+    color: #AED137; }
   .contest p {
     font-size: 1.6rem;
     padding-bottom: 3rem;
@@ -286,13 +315,17 @@ main {
       padding-bottom: 2rem; }
 
 .mobile-app {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 90rem;
-  position: relative; }
+  position: relative;
+  justify-content: space-around;
+  align-items: center; }
   .mobile-app h2 {
     text-align: center;
     color: #954b2a;
-    margin: 8rem 0 5rem 0; }
+    margin-bottom: 5rem; }
   .mobile-app p {
     text-align: center;
     color: #954b2a;
@@ -303,32 +336,28 @@ main {
     display: flex;
     justify-content: center; }
     .mobile-app .container-mobile .img-card {
-      width: 20%;
+      width: 25%;
       z-index: 2;
       margin-top: 2rem; }
       .mobile-app .container-mobile .img-card:hover {
         transform: scale(1.05);
         z-index: 3; }
     .mobile-app .container-mobile .card-1 {
-      transform: rotate(-10deg) translate(13rem, 50px) scale(0.95); }
+      transform: rotate(-10deg) translate(30%, 50px) scale(0.95); }
     .mobile-app .container-mobile .card-1:hover {
-      transform: rotate(-10deg) translate(13rem, 50px) scale(1);
+      transform: rotate(-10deg) translate(-5%, 50px) scale(1);
       z-index: 5; }
     .mobile-app .container-mobile .card-2 {
       z-index: 4; }
     .mobile-app .container-mobile .card-3 {
-      transform: rotate(10deg) translate(-13rem, 50px) scale(0.95); }
+      transform: rotate(10deg) translate(-30%, 50px) scale(0.95); }
     .mobile-app .container-mobile .card-3:hover {
-      transform: rotate(10deg) translate(-13rem, 50px) scale(1);
+      transform: rotate(10deg) translate(5%, 50px) scale(1);
       z-index: 5; }
   .mobile-app h3 {
-    color: #954b2a;
-    padding-top: 5rem; }
+    color: #954b2a; }
   .mobile-app .btn--outline {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    margin-top: -7rem;
     color: #954b2a;
     height: 5rem;
     width: 20rem;
@@ -336,12 +365,13 @@ main {
     border: 3px solid #954b2a; }
     .mobile-app .btn--outline:hover {
       border: 3px solid #AED137;
-      color: #fff; }
+      color: #fff;
+      transform: translateY(-0.5rem); }
     .mobile-app .btn--outline:active {
-      transform: translate(-50%, 4px); }
+      transform: translateY(0); }
 
 .newsletter {
-  width: 100rem;
+  width: 55%;
   margin: 3rem auto;
   color: #954b2a;
   position: relative; }
@@ -350,7 +380,7 @@ main {
     position: absolute;
     text-align: center;
     position: absolute;
-    top: 5%;
+    top: 8%;
     left: 50%;
     transform: translate(-50%, 0);
     font-size: 8rem; }
@@ -359,46 +389,50 @@ main {
     top: 30%;
     left: 50%;
     transform: translate(-50%, 0);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 800;
     width: 60%; }
-  .newsletter .form-container {
-    height: 10rem;
+  .newsletter .newsletter-form {
     position: absolute;
     display: flex;
     justify-content: space-around;
     position: absolute;
-    top: 60%;
+    top: 54%;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 35rem; }
-    .newsletter .form-container .newsletter-form {
-      font-weight: 800;
-      font-size: 1.5rem;
-      width: 100%; }
-      .newsletter .form-container .newsletter-form label {
-        font-size: 1.8rem; }
-      .newsletter .form-container .newsletter-form input {
-        border-radius: 1rem;
-        width: 35rem;
-        height: 3rem;
-        margin: 1rem 0 3rem 0;
-        padding-left: 1rem;
-        border: 2px solid #954b2a; }
-      .newsletter .form-container .newsletter-form .btn--outline {
-        height: 5rem;
-        width: 20rem;
-        font-size: 2rem;
-        color: #954b2a;
-        border: 3px solid #954b2a;
-        margin-top: 12rem; }
-        .newsletter .form-container .newsletter-form .btn--outline:hover {
-          color: #954b2a;
-          border: 3px solid #AED137;
-          color: #fff; }
-  .newsletter--container .newsletter-photo {
+    width: 30%;
+    font-weight: 800;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    .newsletter .newsletter-form label {
+      font-size: 1.8rem; }
+    .newsletter .newsletter-form input {
+      border-radius: 1rem;
+      width: 100%;
+      height: 3rem;
+      margin: 1rem 0 3rem 0;
+      padding-left: 1rem;
+      border: 2px solid #954b2a; }
+    .newsletter .newsletter-form .btn--outline {
+      height: 5rem;
+      width: 20rem;
+      font-size: 2rem;
+      color: #954b2a;
+      border: 3px solid #954b2a;
+      margin-top: 5%; }
+      .newsletter .newsletter-form .btn--outline:hover {
+        border: 3px solid #AED137;
+        color: #fff;
+        transform: translateY(-0.5rem); }
+      .newsletter .newsletter-form .btn--outline:active {
+        transform: translateY(0); }
+  .newsletter .newsletter-photo {
     width: 100%;
-    border-radius: 5rem; }
+    border-radius: 5rem;
+    border: 3px solid #c8c8c8; }
 
 footer {
   width: 100%;
@@ -422,11 +456,14 @@ footer {
       justify-content: center;
       font-size: 1.4rem;
       cursor: pointer;
-      font-weight: 700; }
+      font-weight: 700;
+      transition: all 0.3s; }
       footer ul li:hover {
         transform: scale(1.01, 1) rotate(12deg) skew(0, 0) translate(0, 0);
         transform-origin: 50% 50%;
         background-color: #3d5627; }
+      footer ul li:active {
+        transform: scale(1, 1) rotate(0deg) skew(0, 0) translate(0, 0); }
   footer p {
     width: 60%;
     text-align: center;
