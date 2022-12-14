@@ -5,3 +5,11 @@
 					selektor .darkenin
 
 -------- uporządkować, zmienić to na bardziej "profesjonalne" ---------
+
+					_meal-planner.scss
+
+ 					&:hover~.darkening {
+              			  opacity: 0.9;
+              			  transform: scale(1.05);
+           			 }
+-------- nie działa, po najechaniu na span, klasa darkening się nie odpala------

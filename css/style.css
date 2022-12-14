@@ -88,7 +88,6 @@ main {
   border-radius: 3rem;
   border: 3px solid black;
   transition: all 0.3s;
-  box-shadow: 8px 8px 25px 1px #000;
   transition: all 0.3s; }
 
 .navigation {
@@ -214,6 +213,7 @@ main {
     display: flex;
     justify-content: center; }
     .meal-planner .step-card .darkenin {
+      overflow: hidden;
       position: absolute;
       width: 90%;
       height: 100%;
@@ -243,17 +243,27 @@ main {
       top: 80%;
       left: 50%;
       transform: translate(-50%, 0);
-      z-index: 7;
+      z-index: 10;
       transition: all 0.3s;
       width: 100%;
       text-align: center;
       font-size: 1.8rem;
       width: 90%; }
+      .meal-planner .step-card span:hover ~ .darkening {
+        opacity: 0.9;
+        transform: scale(1.05); }
   .meal-planner .darkenin:hover ~ img {
-    transform: scale(1.05);
-    box-shadow: 3px 6px 15px -3px #000; }
+    transform: scale(1.05); }
   .meal-planner .darkenin:hover {
     opacity: 0.9;
+    transform: scale(1.05); }
+  .meal-planner span:hover {
+    opacity: 1;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, 0); }
+  .meal-planner span:hover ~ img {
     transform: scale(1.05); }
   .meal-planner .darkenin:hover + span {
     opacity: 1;
