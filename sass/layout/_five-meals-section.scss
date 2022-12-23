@@ -6,11 +6,20 @@
     }
 
     .meals-container {
-        // background-color: red;
         display: grid;
         grid-template-rows: repeat(1, 1fr);
         grid-template-columns: repeat(5, 1fr);
         gap: 5rem;
+
+        .dish-element {
+            span {
+                margin-top: 1rem;
+                color: $color-secondary;
+                text-align: center;
+                font-size: 1.3rem;
+                display: block;
+            }
+        }
     }
 
     .see-more {

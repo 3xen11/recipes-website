@@ -135,6 +135,8 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.9rem; }
+  .dish-element:hover span {
+    padding-top: 1.8rem; }
   .dish-element .dish-img {
     width: 100%;
     transition: all 0.3s; }
@@ -594,6 +596,12 @@ footer {
   grid-template-rows: repeat(1, 1fr);
   grid-template-columns: repeat(5, 1fr);
   gap: 5rem; }
+  .five-meals-section .meals-container .dish-element span {
+    margin-top: 1rem;
+    color: #954b2a;
+    text-align: center;
+    font-size: 1.3rem;
+    display: block; }
 
 .five-meals-section .see-more {
   color: #954b2a;
