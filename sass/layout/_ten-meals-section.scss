@@ -1,0 +1,23 @@
+.favourites {
+    h2 {
+        margin-top: 5rem;
+        color: $color-secondary;
+    }
+
+    .meals-container {
+
+        display: grid;
+        height: 50rem;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5rem;
+    }
+
+
+    .see-more {
+        color: $color-secondary;
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,19 @@
+.btn--letter-space {
+    z-index: 3;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $color-secondary;
+    width: 90%;
+    transition: letter-spacing 0.3s;
+    margin: 0 auto;
+    text-decoration:none;
+
+    &:hover {
+        letter-spacing: 1px;
+    }
+
+    &:active {
+        letter-spacing: 0;
+    }
+}
